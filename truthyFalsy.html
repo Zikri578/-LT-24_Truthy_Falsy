@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthy Falsy - Javascript</title>
+    <script src="truthyFalsy.js"></script>
+</head>
+
+<body>
+    <script>
+        /*
+         *   Falsy   
+         */
+
+        //  tipe data boolean false
+        let False = false;
+        if (False) {
+            document.writeln(true);
+        } else {
+            document.writeln(false);
+        }
+        // output : false
+
+        // 0 dan -0
+        let angka = 0;
+        if (angka) {
+            document.writeln(true);
+        } else {
+            document.writeln(false);
+        }
+        // output : false
+
+        let number = -0;
+        if (number) {
+            document.writeln(true);
+        } else {
+            document.writeln(false);
+        }
+        // output : false
+
+        // tipe data string
+        let string = "";
+        if (string) {
+            document.writeln("true");
+        } else {
+            document.writeln("false");
+        }
+        // output : false
+
+        // tipe data null
+        let kosong = null;
+        if (kosong) {
+            document.writeln(true);
+        } else {
+            document.writeln(false);
+        }
+        // output : false
+
+        // tipe data undefined
+        let tidakAda = undefined;
+        if (tidakAda) {
+            document.writeln(true);
+        } else {
+            document.writeln(false);
+        }
+        // output : false
+
+        // tipe data nan
+        let nan = NaN
+        if (nan) {
+            document.writeln(true);
+        } else {
+            document.writeln(false);
+        }
+        // output : false
+    </script>
+</body>
+
+</html>
